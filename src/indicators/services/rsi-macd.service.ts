@@ -26,7 +26,7 @@ export class RsiMacdService implements OnModuleInit {
 
   async onModuleInit() {
     console.log('Rsi & macd running! ', await this.client.ping());
-    setInterval(() => this.executeTradingStrategy(), 1 * 60 * 1000); // Run every 15 minutes 15 * 60 * 1000
+    setInterval(() => this.executeTradingStrategy(), 5 * 60 * 1000); // Run every 15 minutes 15 * 60 * 1000
   }
 
   // Function to calculate RSI
