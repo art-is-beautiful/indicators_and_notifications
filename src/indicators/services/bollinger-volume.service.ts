@@ -21,7 +21,7 @@ export class BollingerVolumeService implements OnModuleInit {
 
   async onModuleInit() {
     console.log('Bollinger & volume running! ', await this.client.ping());
-    setInterval(() => this.executeTradingStrategy(), 0.1 * 60 * 1000); // Run every 15 minutes 15 * 60 * 1000
+    setInterval(() => this.executeTradingStrategy(), 1 * 60 * 1000); // Run every 15 minutes 15 * 60 * 1000
   }
 
   // Function to get Bollinger Bands

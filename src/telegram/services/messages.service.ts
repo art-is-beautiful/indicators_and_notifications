@@ -10,6 +10,7 @@ export class TelegramMessagesService {
   }
 
   async send(message: string) {
+    console.log('url!: ', this.url)
     try {
       await lastValueFrom(
         this.httpService.get(this.url, {
